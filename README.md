@@ -1,21 +1,9 @@
-[![Build Status](https://travis-ci.org/innowatio/iwwa-lambda-users.svg?branch=master)](https://travis-ci.org/innowatio/iwwa-lambda-users)
-[![Dependency Status](https://david-dm.org/innowatio/iwwa-lambda-users.svg)](https://david-dm.org/innowatio/iwwa-lambda-users)
-[![devDependency Status](https://david-dm.org/innowatio/iwwa-lambda-users/dev-status.svg)](https://david-dm.org/innowatio/iwwa-lambda-users#info=devDependencies)
+[![Build Status](https://travis-ci.org/innowatio/iwwa-lambda-logger.svg?branch=master)](https://travis-ci.org/innowatio/iwwa-lambda-logger)
+[![Dependency Status](https://david-dm.org/innowatio/iwwa-lambda-logger.svg)](https://david-dm.org/innowatio/iwwa-lambda-logger)
+[![devDependency Status](https://david-dm.org/innowatio/iwwa-lambda-logger/dev-status.svg)](https://david-dm.org/innowatio/iwwa-lambda-logger#info=devDependencies)
 
-# iwwa-lambda-users
+# iwwa-lambda-logger
 
-Lambda for persisting user changes through API.
+Lambda for logging kinesis events.
 
 After cloning the repository, run `npm install` to install all dependencies.
-
-### Configuration
-
-The following environment variables are needed to configure the function:
-
-- `MONGODB_URL`
-
-### Run test
-
-In order to run tests locally a MongoDB instance and a `MONGODB_URL` environment
-param are needed.
-Then, just run `npm run test` command.
