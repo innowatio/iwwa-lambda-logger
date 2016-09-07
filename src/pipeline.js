@@ -6,11 +6,12 @@ export default function pipeline(event, context) {
 
         event.Records.forEach(record => {
             if (record.kinesis && record.kinesis.data) {
+                const streamName = record.eventSourceARN.split("/")[1];
                 const {data} = record.kinesis;
                 const encoded = new Buffer(data, "base64");
                 const decoded = encoded.toString("utf8");
                 const js = JSON.parse(decoded);
-                log.info(js, "logged");
+                log.info({...js, streamName}, "logged");
             }
         });
 
